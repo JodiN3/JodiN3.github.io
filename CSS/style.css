@@ -1,0 +1,580 @@
+/*colors
+   navy blue #0B3C5D
+   yellow-orange #F7C331
+
+/*fonts
+    font-family: 'Lato', sans-serif;
+]
+/* 3 @MEDIA QUERIES - MOBILE, TABLET, DESKTOP */
+
+/*--------------------------------*/
+/*--- GENERAL CSS-ALL FORMATS ---*/
+/*--------------------------------*/
+
+.wrapper {
+  max-width: 1500px;
+  width: 100%;
+  min-height: 3440px;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+body {
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  width: 100%;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Lato';
+  font-size: 18pt;
+  font-weight: 700;
+}
+
+h1 {
+  font-family: 'Lato';
+  color: #FFFFFF;
+  font-size: 36pt;
+  font-weight: 700;
+  line-height: 0;
+}
+
+h2 {
+  font-family: 'Lato';
+  color: #FFFFFF;
+  font-size: 24pt;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Lato';
+  color: #FFFFFF;
+  font-size: 20pt;
+  font-weight: 300;
+  line-height: 1.3em;
+  letter-spacing: .04em;
+}
+
+p {
+  font-family: 'Lato';
+  font-size: 14pt;
+  color: #0B3C5D;
+  text-align: center;
+}
+
+/* container - all formats */
+.container {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  padding: 0;
+  display: inline-block;
+}
+
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+
+.container:after {
+  clear: both;
+}
+
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* HEADER/NAVBAR - all formats */
+.header-box .symbol-logo{
+  padding: 20px 0;
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  z-index: 99;
+  vertical-align: middle;
+}
+
+.navbar-links {
+  padding-top: 0px;
+  margin: auto;
+  float: right;
+  list-style: none;
+}
+
+.navbar-links li a{
+  font-family: 'Lato';
+  color: #0B3C5D;
+  font-weight: 400;
+  font-size: 14pt;
+  float: right;
+}
+
+.navbar-links li {
+  display: inline;
+  padding-left: 20px;
+  float: right;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline #F7C331;
+  font-size: 14pt;
+  font-weight: 700;
+  color: #F7C331;
+}
+
+/* HERO  - all formats */
+.hero {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  height: 500px;
+  background-image: url(../assets/TreePhoto-BW.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin-bottom: 4em;
+}
+
+.hero-overlay {
+  background-color: rgba(10, 60, 93, 0.45);
+  height: 500px;
+  margin-top: -50px;
+}
+
+.name-block .container{
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 9.5em;
+}
+
+.name-block h1{
+  letter-spacing: .25em;
+}
+
+.name-block h2 {
+  letter-spacing: .07em;
+}
+
+.lato-light {
+  font-weight: 300;
+}
+
+/* CASE STUDIES - all formats */
+.case-studies .container {
+  background: rgb(189,189,189);
+  background: linear-gradient(126deg, rgba(189,189,189,1) 5%, rgba(11,60,93,0.9934348739495799) 40%);
+  vertical-align: middle;
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  margin-top: 1em;
+}
+
+.case-studies .container h1 {
+  font-size: 24pt;
+  font-weight: 700;
+  letter-spacing: .04em;
+  line-height: 1em;
+}
+
+.case-studies .container h2 {
+  font-size: 20pt;
+  font-weight: 400;
+  letter-spacing: .04em;
+  line-height: 1em;
+}
+
+.case-studies .container h3 {
+  font-size: 18pt;
+  font-weight: 300;
+  letter-spacing: .04em;
+  line-height: 1em;
+}
+
+.case-studies .jeannies-pic, .crave-pic, .keeparoo-pic {
+  float: left;
+  width: 100%;
+  max-width: 46em;
+  min-width: 23em;
+  padding: 2em 2em;
+}
+
+.case-studies .crave-pic {
+  float: left;
+  width: 100%;
+  max-width: 40em;
+  min-width: 20em;
+  padding: 1.5em 2em;
+}
+
+.case-studies .jeannies-text, .crave-text, .keeparoo-text {
+  text-align: center;
+  vertical-align: middle;
+  padding: 4em;
+  margin: auto;
+}
+
+.case-studies .case-button a{
+  font-size: 18pt;
+  font-weight: 700;
+  padding: 10px 15px;
+  height: 50px;
+  width: 200px;
+  margin: 20px auto;
+  background: #F7C331;
+  text-decoration: none;
+  color: #0B3C5D;
+}
+
+.case-button a:hover {
+  color: #FFFFFF;
+}
+
+/* CONTACT - all formats */
+.contact .container {
+  background: #0B3C5D;
+  vertical-align: middle;
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  margin: 5em auto 1em;
+  padding: 6em;
+}
+
+.contact h1 {
+  font-size: 24pt;
+  font-weight: 700;
+  letter-spacing: .04em;
+  line-height: 1em;
+}
+
+.contact h2 {
+  font-size: 20pt;
+  font-weight: 300;
+  letter-spacing: .04em;
+  line-height: 1.57em;
+  padding: 0 2em;
+}
+
+.contact .case-button a{
+  font-size: 22pt;
+  font-weight: 700;
+  padding: 10px 15px;
+  height: 60px;
+  width: 200px;
+  margin: 20px auto;
+  background: #F7C331;
+  text-decoration: none;
+  color: #0B3C5D;
+}
+
+.contact a:hover {
+  color: #FFFFFF;
+}
+
+
+/* FOOTER- all formats */
+footer .container {
+  background: #FFFFFF;
+  vertical-align: middle;
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  margin-top: 1em;
+  padding: 0;
+}
+
+footer a {
+  font-size: 12px;
+  font-weight: 300;
+  color: #A65215;
+  margin: auto;
+  float: none;
+}
+
+footer .icons a{
+  vertical-align: top;
+  padding: 10px 25px;
+  float: right;
+}
+
+footer .copyright, p {
+  font-family: 'Lato';
+  color: #0B3C5D;
+  font-size: 12pt;
+  margin-top: 15px;
+  margin: auto;
+  padding-right: 20px;
+  float: left;
+  vertical-align: middle;
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/* RESPONSIVE-iPHONES/OTHER MOBILES (min320/max600)
+/*-----------------------------------------------------------------------------------*/
+
+@media (min-width: 320px) and (max-width: 600px) {
+
+    .column.full { width: 100%; }
+    .column.half { width: 100%; }
+
+  /* HEADER/NAVBAR - max600 */
+  .header-box .symbol-logo {
+  width: 98%;
+  text-align: center;
+  float: none;
+  }
+
+  .navbar-links {
+  padding-bottom: 20px;
+  float: none;
+  text-align: none;
+  }
+
+  .navbar-links li a{
+  float: none;
+  }
+
+  .navbar-links li {
+  float: none;
+  }
+
+  /* HERO  - max600 */
+  .name-block .container{
+  }
+
+  .name-block h1{
+  font-size: 26pt;
+  }
+
+  .name-block h2 {
+  font-size: 19pt;
+  }
+
+  .name-block h3 {
+  font-size: 14pt;
+  }
+
+  /* CASE STUDIES - max600 */
+  .case-studies .container {
+  padding-bottom: 3em;
+  }
+
+  .case-studies .container h1 {
+  font-size: 17pt;
+  }
+
+  .case-studies .container h2 {
+  font-size: 15pt;
+  }
+
+  .case-studies .container h3 {
+  font-size: 12pt;
+  }
+
+  .case-studies .jeannies-pic, .crave-pic, .keeparoo-pic {
+  float: none;
+  margin: auto;
+  width: 95%;
+  min-width: 22.5em;
+  padding: 1em 0 0 0;
+  }
+
+  .case-studies .crave-pic {
+  float: none;
+  margin: auto;
+  width: 95%;
+  padding: 1em 0 0 0;
+  }
+
+  .case-studies .jeannies-text, .crave-text, .keeparoo-text {
+  padding: 0;
+  }
+
+  .case-studies .case-button a{
+  font-size: 16pt;
+  }
+
+  /* CONTACT - max600 */
+  .contact .container {
+  padding: 4em;
+  }
+
+  .contact h1 {
+  font-size: 20pt;
+  line-height: 1.5em;
+  }
+
+  .contact h2 {
+  font-size: 13pt;
+  font-weight: 300;
+  line-height: 1.5em;
+  padding: 0;
+  }
+
+  .contact .case-button a{
+  font-size: 18pt;
+  }
+
+  /* FOOTER - max600 */
+
+  footer .icons a{
+  float: none;
+  }
+
+  footer .copyright, p {
+  margin-top: 0;
+  padding-right: 0;
+  padding-bottom: 15px;
+  padding-top: 0;
+  float: none;
+  }
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* RESPONSIVE-IPADS/TABLETS (min601/max1199)
+/*-----------------------------------------------------------------------------------*/
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+
+    .column.full { width: 100%; }
+
+    .column.half {
+        width: 49%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+  /* HEADER/NAVBAR - max1199 */
+
+  /* HERO  - max1199 */
+  .name-block .container{
+  }
+
+  .name-block h1{
+  font-size: 30pt;
+  }
+
+  .name-block h2 {
+  font-size: 24pt;
+  }
+
+  .name-block h3 {
+  font-size: 18pt;
+  }
+
+  /* CASE STUDIES - max1199 */
+  .case-studies .container {
+  padding-bottom: 3em;
+  }
+
+  .case-studies .container h1 {
+  font-size: 17pt;
+  }
+
+  .case-studies .container h2 {
+  font-size: 15pt;
+  }
+
+  .case-studies .container h3 {
+  font-size: 12pt;
+  }
+
+  .case-studies .jeannies-pic, .crave-pic, .keeparoo-pic {
+  float: left;
+  margin: auto;
+  width: 95%;
+  min-width: 22.5em;
+  padding: 1em 0 0 0;
+  }
+
+  .case-studies .crave-pic {
+  float: left;
+  margin: auto;
+  width: 95%;
+  padding: 1em 0 0 0;
+  }
+
+  .case-studies .jeannies-text, .crave-text, .keeparoo-text {
+  padding: 0;
+  }
+
+  .case-studies .case-button a{
+  font-size: 16pt;
+  }
+
+  /* CONTACT - max1199 */
+  .contact .container {
+  padding: 4em;
+  }
+
+  .contact h1 {
+  font-size: 20pt;
+  line-height: 1.5em;
+  }
+
+  .contact h2 {
+  font-size: 13pt;
+  font-weight: 300;
+  line-height: 1.5em;
+  padding: 0;
+  }
+
+  .contact .case-button a{
+  font-size: 18pt;
+  }
+
+  /* FOOTER - max1199 */
+  footer .icons a{
+  float: none;
+  }
+
+  footer .copyright, p {
+  margin-top: 0;
+  padding-right: 0;
+  padding-bottom: 15px;
+  padding-top: 0;
+  float: none;
+  }
+  
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* RESPONSIVE-LAPTOPS/DESKTOPS (min1200px)
+/*-----------------------------------------------------------------------------------*/
+@media (min-width: 1200px) {
+
+    .column.full { width: 100%; }
+
+    .column.half {
+        width: 49%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+  /* HEADER/NAVBAR - min1200 */
+
+  /* PROJECTS - min 1200 */
+
+
+  /* FOOTER - min 1200 */
+    footer .container {
+        margin: auto;
+        padding: 0;
+    }
+
+
+}
