@@ -13,7 +13,7 @@
 
 .wrapper {
   max-width: 1500px;
-  width: 100%;
+  width: 85%;
   min-height: 3440px;
   height: 100%;
   text-align: center;
@@ -38,7 +38,7 @@ a {
 h1 {
   font-family: 'Lato';
   color: #FFFFFF;
-  font-size: 36pt;
+  font-size: 34pt;
   font-weight: 700;
   line-height: 0;
 }
@@ -46,16 +46,16 @@ h1 {
 h2 {
   font-family: 'Lato';
   color: #FFFFFF;
-  font-size: 24pt;
+  font-size: 22pt;
   font-weight: 400;
 }
 
 h3 {
   font-family: 'Lato';
   color: #FFFFFF;
-  font-size: 20pt;
+  font-size: 18pt;
   font-weight: 300;
-  line-height: 1.3em;
+  line-height: 1.5em;
   letter-spacing: .04em;
 }
 
@@ -101,24 +101,23 @@ p {
 }
 
 .navbar-links {
-  padding-top: 0px;
+  padding-top: 60px;
   margin: auto;
-  float: right;
   list-style: none;
+  float: right;
 }
 
 .navbar-links li a{
   font-family: 'Lato';
   color: #0B3C5D;
   font-weight: 400;
-  font-size: 14pt;
-  float: right;
+  font-size: 12pt;
+  display: inline-block;
 }
 
 .navbar-links li {
-  display: inline;
-  padding-left: 20px;
-  float: right;
+  display: inline-block;
+  padding-left: 18px;
 }
 
 .navbar-links a:hover {
@@ -173,36 +172,35 @@ p {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  float: left;
   margin-top: 1em;
 }
 
 .case-studies .container h1 {
-  font-size: 24pt;
+  font-size: 22pt;
   font-weight: 700;
   letter-spacing: .04em;
-  line-height: 1em;
+  line-height: 1.25em;
 }
 
 .case-studies .container h2 {
-  font-size: 20pt;
+  font-size: 18pt;
   font-weight: 400;
   letter-spacing: .04em;
   line-height: 1em;
 }
 
 .case-studies .container h3 {
-  font-size: 18pt;
+  font-size: 16pt;
   font-weight: 300;
   letter-spacing: .04em;
-  line-height: 1em;
+  line-height: 1.5em;
 }
 
-.case-studies .jeannies-pic, .crave-pic, .keeparoo-pic {
+.case-studies .jeannies-pic, .keeparoo-pic {
   float: left;
   width: 100%;
   max-width: 46em;
-  min-width: 23em;
+  min-width: 31em;
   padding: 2em 2em;
 }
 
@@ -298,15 +296,16 @@ footer .container {
 footer a {
   font-size: 12px;
   font-weight: 300;
-  color: #A65215;
   margin: auto;
-  float: none;
 }
 
-footer .icons a{
+footer .icons img{
   vertical-align: top;
-  padding: 10px 25px;
+  padding: 10px 0 0 18px;
   float: right;
+  width: 100%;
+  max-width: 70px;
+  max-height: 70px;
 }
 
 footer .copyright, p {
@@ -329,118 +328,124 @@ footer .copyright, p {
 @media (min-width: 320px) and (max-width: 600px) {
 
     .column.full { width: 100%; }
-    .column.half { width: 100%; }
+    .column.one { width: 100%; }
+    .column.two { width: 100%; }
+    .column.three { width: 100%; }
+    .column.half { width: 100%;
+    display: inline-table;
+  }
 
   /* HEADER/NAVBAR - max600 */
   .header-box .symbol-logo {
-  width: 98%;
-  text-align: center;
-  float: none;
+    width: 98%;
+    text-align: center;
+    float: none;
   }
 
   .navbar-links {
-  padding-bottom: 20px;
-  float: none;
-  text-align: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: none;
+    text-align: none;
   }
 
   .navbar-links li a{
-  float: none;
+    float: none;
   }
 
   .navbar-links li {
-  float: none;
+    float: none;
   }
 
   /* HERO  - max600 */
-  .name-block .container{
-  }
-
   .name-block h1{
-  font-size: 26pt;
+    font-size: 24pt;
   }
 
   .name-block h2 {
-  font-size: 19pt;
+    font-size: 18pt;
   }
 
   .name-block h3 {
-  font-size: 14pt;
+    font-size: 13pt;
   }
 
   /* CASE STUDIES - max600 */
   .case-studies .container {
-  padding-bottom: 3em;
+    padding-bottom: 3em;
   }
 
   .case-studies .container h1 {
-  font-size: 17pt;
+    font-size: 16pt;
   }
 
   .case-studies .container h2 {
-  font-size: 15pt;
+    font-size: 14pt;
   }
 
   .case-studies .container h3 {
-  font-size: 12pt;
+    font-size: 11pt;
   }
 
-  .case-studies .jeannies-pic, .crave-pic, .keeparoo-pic {
-  float: none;
-  margin: auto;
-  width: 95%;
-  min-width: 22.5em;
-  padding: 1em 0 0 0;
+  .case-studies .jeannies-pic, .keeparoo-pic {
+    float: none;
+    margin: auto;
+    width: 90%;
+    min-width: 15em;
+    padding: 1em 0 0 0;
   }
 
   .case-studies .crave-pic {
-  float: none;
-  margin: auto;
-  width: 95%;
-  padding: 1em 0 0 0;
+    float: none;
+    margin: auto;
+    width: 80%;
+    max-width: 40em;
+    min-width: 14em;
+    padding: 1em 0 0 0;
   }
 
   .case-studies .jeannies-text, .crave-text, .keeparoo-text {
-  padding: 0;
+    padding: 0;
   }
 
   .case-studies .case-button a{
-  font-size: 16pt;
+    font-size: 16pt;
   }
 
   /* CONTACT - max600 */
   .contact .container {
-  padding: 4em;
+    padding: 4em;
   }
 
   .contact h1 {
-  font-size: 20pt;
-  line-height: 1.5em;
+    font-size: 18pt;
+    line-height: 1.5em;
   }
 
   .contact h2 {
-  font-size: 13pt;
-  font-weight: 300;
-  line-height: 1.5em;
-  padding: 0;
+    font-size: 12pt;
+    font-weight: 300;
+    line-height: 1.5em;
+    padding: 0;
   }
 
   .contact .case-button a{
-  font-size: 18pt;
+    font-size: 14pt;
   }
 
   /* FOOTER - max600 */
 
-  footer .icons a{
+  footer .icons img{
   float: none;
   }
 
   footer .copyright, p {
-  margin-top: 0;
-  padding-right: 0;
-  padding-bottom: 15px;
-  padding-top: 0;
-  float: none;
+    margin-top: 0;
+    padding-right: 0;
+    padding-bottom: 15px;
+    padding-top: 0;
+    float: none;
+    font-size: 8pt;
   }
 
 }
@@ -452,10 +457,25 @@ footer .copyright, p {
 
     .column.full { width: 100%; }
 
+    .column.one {
+      width: 15%;
+      display: inline-block;
+      float: left;
+    }
+
+    .column.two { width: 1%;
+      display: inline-block;
+    }
+
+    .column.three { width: 68%;
+      display: inline-block;
+      float: right;
+    }
+
     .column.half {
         width: 49%;
-        display: inline-block;
-        vertical-align: middle;
+        display: inline-table;
+        float: none;
     }
 
   /* HEADER/NAVBAR - max1199 */
@@ -465,91 +485,93 @@ footer .copyright, p {
   }
 
   .name-block h1{
-  font-size: 30pt;
+    font-size: 32pt;
   }
 
   .name-block h2 {
-  font-size: 24pt;
+    font-size: 24pt;
   }
 
   .name-block h3 {
-  font-size: 18pt;
+    font-size: 18pt;
   }
 
   /* CASE STUDIES - max1199 */
   .case-studies .container {
-  padding-bottom: 3em;
+    padding-bottom: 3em;
   }
 
   .case-studies .container h1 {
-  font-size: 17pt;
+    font-size: 20pt;
   }
 
   .case-studies .container h2 {
-  font-size: 15pt;
+    font-size: 16pt;
   }
 
   .case-studies .container h3 {
-  font-size: 12pt;
+    font-size: 14pt;
   }
 
-  .case-studies .jeannies-pic, .crave-pic, .keeparoo-pic {
-  float: left;
-  margin: auto;
-  width: 95%;
-  min-width: 22.5em;
-  padding: 1em 0 0 0;
+  .case-studies .jeannies-pic, .keeparoo-pic {
+    float: none;
+    margin: auto;
+    width: 100%;
+    min-width: 32em;
+    padding: 1em 0;
   }
 
   .case-studies .crave-pic {
-  float: left;
-  margin: auto;
-  width: 95%;
-  padding: 1em 0 0 0;
+    float: none;
+    margin: auto;
+    width: 100%;
+    min-width: 24em;
+    padding: 1em 0 0 0;
   }
 
   .case-studies .jeannies-text, .crave-text, .keeparoo-text {
-  padding: 0;
+    padding: 0;
   }
 
   .case-studies .case-button a{
-  font-size: 16pt;
+    font-size: 16pt;
   }
 
   /* CONTACT - max1199 */
   .contact .container {
-  padding: 4em;
+    padding: 4em;
   }
 
   .contact h1 {
-  font-size: 20pt;
-  line-height: 1.5em;
+    font-size: 20pt;
+    line-height: 1.5em;
   }
 
   .contact h2 {
-  font-size: 13pt;
-  font-weight: 300;
-  line-height: 1.5em;
-  padding: 0;
+    font-size: 13pt;
+    font-weight: 300;
+    line-height: 1.5em;
+    padding: 0;
   }
 
   .contact .case-button a{
-  font-size: 18pt;
+    font-size: 18pt;
   }
 
   /* FOOTER - max1199 */
-  footer .icons a{
-  float: none;
+  footer .icons img{
+    float: right;
+    padding-top: 0;
   }
 
   footer .copyright, p {
-  margin-top: 0;
-  padding-right: 0;
-  padding-bottom: 15px;
-  padding-top: 0;
-  float: none;
+    margin-top: 0;
+    padding-right: 0;
+    padding-bottom: 15px;
+    padding-top: 0;
+    float: left;
+    font-size: 8pt;
   }
-  
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -557,13 +579,27 @@ footer .copyright, p {
 /*-----------------------------------------------------------------------------------*/
 @media (min-width: 1200px) {
 
-    .column.full { width: 100%; }
+  .column.full { width: 100%; }
+  .column.one {
+    width: 25%;
+    display: inline-block;
+    float: left;
+  }
+  .column.two { width: 1%;
+    display: inline-block;
+  }
+  .column.three { width: 59%;
+    display: inline-block;
+    float: right;
+    vertical-align: middle;
+  }
 
-    .column.half {
-        width: 49%;
-        display: inline-block;
-        vertical-align: middle;
-    }
+
+  .column.half {
+      width: 49%;
+      display: inline-block;
+      vertical-align: middle;
+  }
 
   /* HEADER/NAVBAR - min1200 */
 
@@ -575,6 +611,4 @@ footer .copyright, p {
         margin: auto;
         padding: 0;
     }
-
-
 }
