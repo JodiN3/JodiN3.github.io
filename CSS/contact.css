@@ -1,0 +1,150 @@
+/*colors
+   navy blue #0B3C5D
+   yellow-orange #F7C331
+
+/*fonts
+    font-family: 'Lato', sans-serif;
+]
+/* 3 @MEDIA QUERIES - MOBILE, TABLET, DESKTOP */
+
+/*--------------------------------*/
+/*--- GENERAL CSS-ALL FORMATS ---*/
+/*--------------------------------*/
+
+/* CONTACT ME  - all formats */
+.contact-pg {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: #0B3C5D;
+}
+
+.lets-talk {
+  align-self: center;
+}
+
+.lets-talk, h1 {
+  text-align: left;
+  vertical-align: middle;
+  padding: 1em 30px 10px;
+  text-align: center;
+  letter-spacing: .25em;
+  line-height: 1em;
+}
+
+.lets-talk, h2 {
+  font-size: 18pt;
+  font-weight: 300;
+  letter-spacing: .04em;
+  line-height: 1.5em;
+}
+
+.lets-talk, a {
+  color: #F7C331;
+  font-weight: 300;
+}
+
+.lato-light {
+  font-weight: 200;
+}
+
+.input-form {
+  padding: 20px;
+  width: 75%;
+  margin: 1em auto;
+}
+
+form input, form textarea {
+  margin-bottom: .5em;
+}
+
+input, textarea {
+  height: 38px;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #eeeeee;
+  border: 1px solid #0B3C5D;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+  input, textarea, select, fieldset {
+    margin-bottom: 1.5rem; }
+
+.connect-button button{
+  font-size: 16pt;
+  font-weight: 700;
+  padding: 10px 15px;
+  height: 50px;
+  width: 225px;
+  margin: 20px auto;
+  background: #F7C331;
+  text-decoration: none;
+  color: #0B3C5D;
+}
+
+.connect-buttom a:hover {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* RESPONSIVE-iPHONES/OTHER MOBILES (min320/max600)
+/*-----------------------------------------------------------------------------------*/
+@media (min-width: 320px) and (max-width: 600px) {
+
+  .lets-talk, h1 {
+    font-size: 22pt;
+  }
+
+  .lets-talk, h2 {
+    font-size: 12pt;
+  }
+
+  .lets-talk a {
+    font-size: 12pt;
+  }
+  .connect-button button{
+    font-size: 12pt;
+    height: 40px;
+    width: 150px;
+    margin: 15px auto;
+  }
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* RESPONSIVE-IPADS/TABLETS (min601/max1199)
+/*-----------------------------------------------------------------------------------*/
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+
+  .lets-talk, h1 {
+    font-size: 24pt;
+  }
+
+  .lets-talk, h2 {
+    font-size: 14pt;
+  }
+
+  .connect-button button{
+    font-size: 14pt;
+    height: 50px;
+    width: 200px;
+    margin: 15px auto;
+  }
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* RESPONSIVE-LAPTOPS/DESKTOPS (min1200px)
+/*-----------------------------------------------------------------------------------*/
+@media (min-width: 1200px) {
+
+}
