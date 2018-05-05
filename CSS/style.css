@@ -157,27 +157,22 @@ p {
 .projects {
 	align-items: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-position: center;
 	background: linear-gradient(126deg, rgba(189,189,189,1) 5%, rgba(11,60,93,0.9934348739495799) 40%);
 	display: flex;
 	justify-content: space-evenly;
 	margin-top: 1em;
-	padding: 1em 3em;
+	padding: 2em 0em;
  }
 
-.project-pic, .jeannies-pic, .keeparoo-pic {
-	max-width: 40em;
-	min-width: 23em;
-  padding: 1em 3em;
- }
+.project-pic {
+	align-self: center;
+	width: auto;
+}
 
-.project-pic .crave-pic {
-	max-width: 35em;
-	min-width: 20em;
-	padding: 1em 3em;
- }
-
-.project-text {justify-content: flex-end;}
+.project-text {
+	align-self: center;
+}
 
 .project-text h1 {
 	font-size: 22pt;
@@ -311,7 +306,7 @@ p {
 
   .navbar-links a {
     font-size: 10pt;
-    padding: 10px;
+    padding: 8px;
   }
 
   .navbar-links img{
@@ -320,15 +315,15 @@ p {
 
   /* HERO  - max600 */
   .name-block h1{
-    font-size: 24pt;
+    font-size: 20pt;
   }
 
   .name-block h2 {
-    font-size: 18pt;
+    font-size: 16pt;
   }
 
   .name-block h3 {
-    font-size: 13pt;
+    font-size: 10pt;
   }
 
   /* CASE STUDIES - max600 */
@@ -339,30 +334,28 @@ p {
     flex: 0 1 20em;
   }
 
+	.project-pic .jeannies-pic, .keeparoo-pic, .crave-pic {
+    width: 80%;
+		padding: 0;
+  }
+
+	  .project-text {
+			line-height: 1.25em;
+	  }
+
   .project-text h1 {
     font-size: 16pt;
+		line-height: 1.25em;
   }
 
   .project-text h2 {
+		line-height: 1.25em;
     font-size: 14pt;
   }
 
   .project-text h3 {
+		line-height: 1.25em;
     font-size: 11pt;
-  }
-
-  .project-pic .jeannies-pic, .keeparoo-pic {
-    padding: 1em;
-    width: 80%;
-  }
-
-  .project-pic .crave-pic {
-    margin: auto;
-    width: 68%;
-  }
-
-  .project-text {
-    padding: 0;
   }
 
   .case-studies .case-button a{
@@ -370,24 +363,24 @@ p {
   }
 
   /* CONTACT - max600 */
-  .contact .container {
-    padding: 4em;
+  .contact-text {
+    padding: 2em;
   }
 
-  .contact h1 {
-    font-size: 18pt;
-    line-height: 1.5em;
+  .contact-text h1 {
+    font-size: 16pt;
+    line-height: 1.25em;
   }
 
-  .contact h2 {
-    font-size: 12pt;
+  .contact-text h2 {
+    font-size: 13pt;
     font-weight: 300;
-    line-height: 1.5em;
+    line-height: 1.25em;
     padding: 0;
   }
 
-  .contact .case-button a{
-    font-size: 14pt;
+  .contact-text .case-button a{
+    font-size: 12pt;
   }
 
   /* FOOTER - max600 */
@@ -434,10 +427,14 @@ p {
   /* CASE STUDIES - max1199 */
   .projects {
     padding: 1em 0 3em 0;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     height: auto;
   }
+
+	.project-text {
+		padding: 0;
+	}
 
   .project-text h1 {
     font-size: 16pt;
@@ -451,15 +448,9 @@ p {
     font-size: 12pt;
   }
 
-  .project-pic .jeannies-pic, .keeparoo-pic {
+  .project-pic .jeannies-pic, .keeparoo-pic, .crave-pic {
     width: 90%;
-    padding: 1em;
-    min-width: 25em;
-  }
-
-  .project-pic .crave-pic {
-    margin: auto;
-    width: 70%;
+		padding: 0;
   }
 
   .case-studies .case-button a{
@@ -467,23 +458,23 @@ p {
   }
 
   /* CONTACT - max1199 */
-  .contact .container {
+  .contact-text {
     padding: 4em;
   }
 
-  .contact h1 {
+  .contact-text h1 {
     font-size: 20pt;
     line-height: 1.5em;
   }
 
-  .contact h2 {
+  .contact-text h2 {
     font-size: 13pt;
     font-weight: 300;
     line-height: 1.5em;
     padding: 0;
   }
 
-  .contact .case-button a{
+  .contact-text .case-button a{
     font-size: 18pt;
   }
 
