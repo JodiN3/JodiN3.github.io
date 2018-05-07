@@ -4,6 +4,7 @@
 
 /*fonts
     font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
 ]
 /* 3 @MEDIA QUERIES - MOBILE, TABLET, DESKTOP */
 
@@ -11,18 +12,7 @@
 /*--- GENERAL CSS-ALL FORMATS ---*/
 /*--------------------------------*/
 
-
-h1 {
-  letter-spacing: .25em;
-  line-height: 1em;
-}
-
 h2 {
-  font-size: 18pt;
-  font-weight: 300;
-  letter-spacing: .04em;
-  line-height: 1.3em;
-  text-align: left;
 }
 
 /* ABOUT ME  - all formats */
@@ -43,6 +33,8 @@ h2 {
   vertical-align: middle;
   margin: 20px auto;
   padding: 1em 30px 10px;
+  letter-spacing: .25em;
+  line-height: 1em;
 }
 
 .about-text, h2 {
@@ -50,6 +42,11 @@ h2 {
   vertical-align: middle;
   margin: 20px auto;
   padding: 1em 30px 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18pt;
+  font-weight: 300;
+  letter-spacing: .04em;
+  line-height: 1.3em;
 }
 
 .lato-light {

@@ -3,7 +3,9 @@
    yellow-orange #F7C331
 
 /*fonts
-    font-family: 'Lato', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Lato', sans-serif;
+
 ]
 /* 3 @MEDIA QUERIES - MOBILE, TABLET, DESKTOP */
 
@@ -51,7 +53,7 @@ h2 {
 
 h3 {
 	color: #FFFFFF;
-	font-family: 'Lato';
+	font-family: 'Raleway', sans-serif;
 	font-size: 18pt;
 	font-weight: 300;
 	letter-spacing: .04em;
@@ -60,7 +62,7 @@ h3 {
 
 p {
 	color: #0B3C5D;
-	font-family: 'Lato';
+	font-family: 'Raleway', sans-serif;
 	font-size: 14pt;
 	text-align: center;
  }
@@ -123,7 +125,7 @@ p {
 
  /* HERO  - all formats */
  .hero {
- 	background-image: url(../assets/TreePhoto-BW.png);
+ 	background-image: url(../assets/treephoto-bw.png);
  	background-position: top center;
  	background-repeat: no-repeat;
  	background-size: cover;
@@ -235,7 +237,8 @@ p {
 }
 
 .contact-text h2 {
-  font-size: 20pt;
+	font-family: 'Raleway', sans-serif;
+  font-size: 18pt;
   font-weight: 300;
   letter-spacing: .04em;
   line-height: 1.57em;

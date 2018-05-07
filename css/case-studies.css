@@ -4,6 +4,7 @@
 
 /*fonts
     font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
 ]
 /* 3 @MEDIA QUERIES - MOBILE, TABLET, DESKTOP */
 
@@ -13,101 +14,256 @@
 
 
 h1 {
-  letter-spacing: .25em;
+  font-family: 'Lato', sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: .04em;
   line-height: 1em;
+  text-align: center;
+  color: #000000;
 }
 
 h2 {
-  font-size: 18pt;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
   font-weight: 300;
   letter-spacing: .04em;
   line-height: 1.3em;
   text-align: left;
+  color: #000000;
 }
 
-/* ABOUT ME  - all formats */
-.about {
-  background: rgb(189,189,189);
-  background: linear-gradient(222deg, rgba(189,189,189,1) 5%, rgba(11,60,93,0.9934348739495799) 40%);
-  vertical-align: middle;
-  height: auto;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 1em;
-  padding-bottom: 3em;
-}
-
-.about-text, h1 {
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: .04em;
+  line-height: 1.3em;
   text-align: left;
-  vertical-align: middle;
-  margin: 20px auto;
-  padding: 1em 30px 10px;
+  color: #000000;
+  margin-top: 2em;
 }
 
-.about-text, h2 {
-  text-align: left;
-  vertical-align: middle;
-  margin: 20px auto;
-  padding: 1em 30px 10px;
-}
-
-.lato-light {
-  font-weight: 200;
-}
-
-.connect-button a{
-  font-size: 22pt;
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
   font-weight: 700;
-  padding: 10px 15px;
-  height: 60px;
-  width: 200px;
-  margin: 20px auto;
-  background: #F7C331;
-  text-decoration: none;
-  color: #0B3C5D;
+  letter-spacing: .04em;
+  line-height: 15px;
+  text-align: left;
+  color: #000000;
 }
 
-.connect-buttom a:hover {
-  color: #FFFFFF;
+p {
+  font-family: 'Raleway', sans-serif;
+  line-height: 32px;
+  font-size: 18px;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+img {
+  margin: 1.5em auto;
+}
+
+a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #F7C331;
+  font-weight: 700;
+}
+
+br {
+  line-height: 3em;
+}
+
+/* TOP-INTRO  - all formats */
+.cs-container{
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   justify-content: center;
+   position: relative;
+   z-index: 1;
+   background-color: #E0E0E0;
+   max-width: 1400px;
+  }
+
+.top-contents-pic {
+  max-width: 1400px;
+  width: 100%;
+  margin-top: 0;
+}
+
+.text-container {
+  padding: 3em;
+}
+
+.text-container h1{
+  margin-top: 0;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 3.57%;
+  line-height: 72px;
+  font-color: #000000;
+ }
+
+ .text-container h2 {
+   font-weight: 700;
+   line-height: 42px;
+   padding: 0 10%;
+ }
+
+ .small-text-container {
+   display: flex;
+   justify-content: space-between;
+   margin: 0 30px 10px 30px;
+   line-height: 32px;
+ }
+
+ .text1, .text2, .text3, p {
+   font-family: "Lato", sans-serif;
+   padding: 0 12px;
+ }
+
+/* CHALLENGE-SOLUTION  - all formats */
+.challenge-solution {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: wrap;
+  padding: 20px;
+  margin: 20px;
+}
+
+.challenge-box, .solution-box {
+  background-color: #E0E0E0;
+  margin: 30px;
+  padding: 25px;
+  text-align: center;
+  line-height: 32px;
+}
+
+.challenge-box, .solution-box, h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
   text-align: center;
 }
 
-.self-photo {
-  display: inline-block;
-  width: 80%;
-  max-width: 391px;
-  max-height: 361px;
+.challenge-box, .solution-box, p {
+  font-weight: 400;
 }
+
+/* THE PROCESS  - all formats */
+
+.click-link a{
+  padding-top: 30px;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  color: #F7C331;
+  font-weight: 700;
+  text-align: center;
+}
+.process {
+
+}
+
+.user-research img{
+  width: 100%;
+  height: 100%;
+}
+
+.competition img {
+  width: 100%;
+  height: 100%;
+}
+
+.personas img {
+  width: 100%;
+  height: 100%;
+}
+
+.workflows img {
+  width: 100%;
+  height: 100%;
+}
+
+.branding img {
+  width: 100%;
+  height: 100%;
+}
+
+.wire-mock {
+}
+
+.wire-mock .invision-links {
+  display: flex;
+}
+
+.wire-mock-box {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-between;
+}
+
+.wireframes-items .mockups-items img{
+  width: 100%;
+  height: 100%;
+}
+
+/* THE CONCLUSION  - all formats */
+
 
 /*-----------------------------------------------------------------------------------*/
 /* RESPONSIVE-iPHONES/OTHER MOBILES (min320/max600)
 /*-----------------------------------------------------------------------------------*/
 
 @media (min-width: 320px) and (max-width: 600px)  {
+  .text-container h1{
+    font-size: 28px;
+   }
 
-  /* ABOUT ME  - max600 */
+  .text-container h2 {
+    font-size: 11px;
+    line-height: 20px;
+   }
 
-  .about-text h1 {
-    font-size: 20pt;
-    margin: 20px auto;
-    padding: 10px 10px;
-  }
+   .text1, .text2, .text3, p {
+     font-family: "Lato", sans-serif;
+     padding: 0 12px;
+   }
 
-  .about-text h2 {
-    font-size: 14pt;
-    margin: 20px auto;
-    padding: 10px 10px;
-  }
+   p {
+     line-height: 16px;
+     font-size: 9px;
+   }
 
-  .self-photo {
-    display: block;
-    width: 50%;
-  }
+   .challenge-box, .solution-box, h2 {
+     font-size: 24px;
+   }
 
-  .connect-button a{
-  font-size: 16pt;
-  }
+   .wire-mock-box {
+     flex-direction: column;
+     justify-content: center;
+   }
+
+   h1 {
+     font-size: 30px;
+   }
+
+   h4 {
+     font-size: 20px;
+     line-height: 23px;
+   }
+
+   a {
+     font-size: 16px;
+   }
+
+   .click-link a{
+     font-size: 16px;
+   }
 
 }
 
@@ -115,26 +271,50 @@ h2 {
 /* RESPONSIVE-IPADS/TABLETS (min601/max1199)
 /*-----------------------------------------------------------------------------------*/
 @media only screen and (min-width: 601px) and (max-width: 1199px) {
-  /* ABOUT ME  - max1199 */
-  .about-text h1{
-    font-size:28pt;
-    margin: 20px auto;
-    padding: 10px 10px;
-  }
+  .text-container h1{
+    font-size: 28px;
+   }
 
-  .about-text h2 {
-    font-size: 20pt;
-    margin: 20px auto;
-    padding: 10px 10px;
-  }
+  .text-container h2 {
+    font-size: 11px;
+    line-height: 20px;
+   }
 
-  .self-photo {
-    width: 60%;
-  }
+   .text1, .text2, .text3, p {
+     font-family: "Lato", sans-serif;
+     padding: 0 12px;
+   }
 
-  .connect-button a{
-  font-size: 18pt;
-  }
+   p {
+     line-height: 16px;
+     font-size: 9px;
+   }
+
+   .challenge-box, .solution-box, h2 {
+     font-size: 24px;
+   }
+
+   .wire-mock-box {
+     flex-direction: column;
+     justify-content: center;
+   }
+
+   h1 {
+     font-size: 30px;
+   }
+
+   h4 {
+     font-size: 20px;
+     line-height: 23px;
+   }
+
+   a {
+     font-size: 16px;
+   }
+
+   .click-link a{
+     font-size: 16px;
+   }
 
 }
 
