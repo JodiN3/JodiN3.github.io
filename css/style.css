@@ -25,21 +25,20 @@ body {
 	margin: auto;
 	padding: 20px;
 	text-align: center;
-	width: 80%;
  }
 
 a {
 	color: #FFFFFF;
 	font-family: 'Lato';
-	font-size: 18pt;
-	font-weight: 700;
+	font-size: 18px;
+	font-weight: 500;
 	text-decoration: none;
  }
 
 h1 {
 	color: #FFFFFF;
 	font-family: 'Lato';
-	font-size: 34pt;
+	font-size: 34px;
 	font-weight: 700;
 	line-height: 0;
  }
@@ -47,14 +46,14 @@ h1 {
 h2 {
 	color: #FFFFFF;
 	font-family: 'Lato';
-	font-size: 22pt;
+	font-size: 22px;
 	font-weight: 400;
  }
 
 h3 {
 	color: #FFFFFF;
 	font-family: 'Raleway', sans-serif;
-	font-size: 18pt;
+	font-size: 18px;
 	font-weight: 300;
 	letter-spacing: .04em;
 	line-height: 1.5em;
@@ -63,7 +62,7 @@ h3 {
 p {
 	color: #0B3C5D;
 	font-family: 'Raleway', sans-serif;
-	font-size: 14pt;
+	font-size: 14px;
 	text-align: center;
  }
 
@@ -95,33 +94,32 @@ p {
 	padding: 0;
  }
 
+.navbar-links .logo {
+	padding-left: 20px;
+	max-width: 90px;
+	min-width: 75px;
+	padding: 20px 0 20px 20px;
+}
+
 .navbar-links li:first-child {
 	align-self: flex-start;
 	list-style: none;
 	margin-right: auto;
 	text-decoration: none;
-  padding: 0;
+	flex: 0 0 150px; 
  }
 
-.navbar-links a {
-	color: #0B3C5D;
-	display: block;
-	font-size: 14pt;
-  font-weight: 400;
-	padding-bottom: 20px;
-	padding-left: 30px;
-	padding-top: 20px;
-	text-decoration: none;
- }
-
-.navbar-links img {
-  align-self: flex-start;
-}
+.navbar-links > li > a {
+		font-size: 16px;
+    padding-right: 30px;
+    color: #0B3C5D;
+	}
 
 .navbar-links a:hover {
 	color: #F7C331;
 	text-decoration: underline #F7C331;
  }
+
 
  /* HERO  - all formats */
  .hero {
@@ -131,7 +129,7 @@ p {
  	background-size: cover;
  	display: flex;
  	flex: 1 100%;
- 	height: 500px;
+ 	height: 450px;
  	margin-bottom: 4em;
   }
 
@@ -140,24 +138,30 @@ p {
  	background-color: rgba(10, 60, 93, 0.40);
  	background-size: cover;
  	display: flex;
- 	height: 500px;
+ 	height: 450px;
  	justify-content: space-around;
  	margin: auto;
  	width: 100%;
   }
 
-.name-block {align-self: center;}
+.name-block {
+	align-self: center;
+}
 
-.name-block h1 {letter-spacing: .25em;}
+.name-block h1 {
+	letter-spacing: .25em;
+}
 
-.name-block h2 {letter-spacing: .07em;}
+.name-block h2 {
+	letter-spacing: .07em;
+}
 
 .lato-light {font-weight: 300;}
 
 
 /* CASE STUDIES - all formats */
 .projects {
-	align-items: center;
+	align-items: left;
 	background-repeat: no-repeat;
 	background-position: center;
 	background: linear-gradient(126deg, rgba(189,189,189,1) 5%, rgba(11,60,93,0.9934348739495799) 40%);
@@ -169,40 +173,41 @@ p {
 
 .project-pic {
 	align-self: center;
-	width: auto;
+	width: 50%;
 }
 
 .project-text {
 	align-self: center;
+	width: 50%;
 }
 
 .project-text h1 {
-	font-size: 22pt;
+	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: .04em;
 	line-height: 1.25em;
  }
 
 .project-text h2 {
-	font-size: 18pt;
+	font-size: 18px;
 	font-weight: 400;
 	letter-spacing: .04em;
 	line-height: 1em;
  }
 
 .project-text h3 {
-	font-size: 16pt;
+	font-size: 16px;
 	font-weight: 300;
 	letter-spacing: .04em;
 	line-height: 1.5em;
  }
 
 .case-studies .case-button a{
-  font-size: 18pt;
+  font-size: 16px;
   font-weight: 700;
-  padding: 10px 15px;
+  padding: 10px;
   height: 50px;
-  width: 200px;
+  width: 150px;
   margin: 20px auto;
   background: #F7C331;
   text-decoration: none;
@@ -216,29 +221,33 @@ p {
 /* CONTACT - all formats */
 .contact {
   display: flex;
-  background: #0B3C5D;
+  background: #E0E0E0;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 4em auto 0;
 }
 
 .contact-text {
+	color: #0B3C5D;
   align-self: center;
   margin: auto;
   width: 100%;
   padding: 6em;
+	letter-spacing: .01em;
 }
 
 .contact-text h1 {
-  font-size: 24pt;
+	color: #0B3C5D;
+  font-size: 26px;
   font-weight: 700;
   letter-spacing: .04em;
   line-height: 1em;
 }
 
 .contact-text h2 {
+	color: #0B3C5D;
 	font-family: 'Raleway', sans-serif;
-  font-size: 18pt;
+  font-size: 20px;
   font-weight: 300;
   letter-spacing: .04em;
   line-height: 1.57em;
@@ -246,7 +255,7 @@ p {
 }
 
 .contact-text .case-button a{
-  font-size: 22pt;
+  font-size: 20px;
   font-weight: 700;
   padding: 10px 15px;
   height: 60px;
@@ -260,7 +269,6 @@ p {
 .contact a:hover {
   color: #FFFFFF;
 }
-
 
 /* FOOTER- all formats */
  footer {
@@ -302,31 +310,41 @@ p {
     justify-content: space-evenly;
   }
 
+	.navbar-links .logo {
+		max-width: 70px;
+		min-width: 75px;
+		padding-bottom: 20px;
+	}
+
   .navbar-links li:first-child {
     align-self: center;
     flex: 1 0 100%;
   }
 
-  .navbar-links a {
-    font-size: 10pt;
-    padding: 8px;
-  }
+	.navbar-links > li > a {
+			font-size: 14px;
+	    padding: 8px 20px;
+		}
 
   .navbar-links img{
     align-self: center;
   }
 
   /* HERO  - max600 */
+
+	.hero {
+		margin-top: 10px;
+	}
   .name-block h1{
-    font-size: 20pt;
+    font-size: 32px;
   }
 
   .name-block h2 {
-    font-size: 16pt;
+    font-size: 26px;
   }
 
   .name-block h3 {
-    font-size: 10pt;
+    font-size: 16px;
   }
 
   /* CASE STUDIES - max600 */
@@ -337,32 +355,33 @@ p {
     flex: 0 1 20em;
   }
 
-	.project-pic .jeannies-pic, .keeparoo-pic, .crave-pic {
-    width: 80%;
+	.project-pic, .jeannies-pic, .keeparoo-pic, .crave-pic {
+    width: 90%;
 		padding: 0;
   }
 
-	  .project-text {
-			line-height: 1.25em;
-	  }
+	 .project-text {
+		line-height: 1.25em;
+		width: 80%;
+  }
 
   .project-text h1 {
-    font-size: 16pt;
+    font-size: 22px;
 		line-height: 1.25em;
   }
 
   .project-text h2 {
 		line-height: 1.25em;
-    font-size: 14pt;
+    font-size: 18px;
   }
 
   .project-text h3 {
 		line-height: 1.25em;
-    font-size: 11pt;
+    font-size: 16px;
   }
 
   .case-studies .case-button a{
-    font-size: 14pt;
+    font-size: 14px;
   }
 
   /* CONTACT - max600 */
@@ -371,19 +390,19 @@ p {
   }
 
   .contact-text h1 {
-    font-size: 16pt;
+    font-size: 22px;
     line-height: 1.25em;
   }
 
   .contact-text h2 {
-    font-size: 13pt;
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.25em;
     padding: 0;
   }
 
   .contact-text .case-button a{
-    font-size: 12pt;
+    font-size: 14px;
   }
 
   /* FOOTER - max600 */
@@ -394,7 +413,7 @@ p {
   }
 
   .footer-content1 p {
-  font-size: 10pt;
+  font-size: 14px;
   }
 
   .footer-content2 img{
@@ -404,30 +423,35 @@ p {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/* RESPONSIVE-IPADS/TABLETS (min601/max1199)
+/* RESPONSIVE-IPADS/TABLETS (min601/max999)
 /*-----------------------------------------------------------------------------------*/
-@media only screen and (min-width: 601px) and (max-width: 1199px) {
+@media only screen and (min-width: 601px) and (max-width: 999px) {
 
   /* HEADER/NAVBAR - max1199 */
 
+	.navbar-links .logo {
+		max-width: 80px;
+		min-width: 80px;
+	}
 
-  /* HERO  - max1199 */
+
+  /* HERO  - max 999 */
   .name-block .container{
   }
 
   .name-block h1{
-    font-size: 32pt;
+    font-size: 32px;
   }
 
   .name-block h2 {
-    font-size: 24pt;
+    font-size: 24px;
   }
 
   .name-block h3 {
-    font-size: 18pt;
+    font-size: 18px;
   }
 
-  /* CASE STUDIES - max1199 */
+  /* CASE STUDIES - max 999 */
   .projects {
     padding: 1em 0 3em 0;
     flex-wrap: wrap;
@@ -440,15 +464,15 @@ p {
 	}
 
   .project-text h1 {
-    font-size: 16pt;
+    font-size: 18px;
   }
 
   .project-text h2 {
-    font-size: 14pt;
+    font-size: 16px;
   }
 
   .project-text h3 {
-    font-size: 12pt;
+    font-size: 14px;
   }
 
   .project-pic .jeannies-pic, .keeparoo-pic, .crave-pic {
@@ -457,33 +481,33 @@ p {
   }
 
   .case-studies .case-button a{
-    font-size: 16pt;
+    font-size: 18px;
   }
 
-  /* CONTACT - max1199 */
+  /* CONTACT - max 999 */
   .contact-text {
     padding: 4em;
   }
 
   .contact-text h1 {
-    font-size: 20pt;
+    font-size: 22px;
     line-height: 1.5em;
   }
 
   .contact-text h2 {
-    font-size: 13pt;
+    font-size: 15px;
     font-weight: 300;
     line-height: 1.5em;
     padding: 0;
   }
 
   .contact-text .case-button a{
-    font-size: 18pt;
+    font-size: 18px;
   }
 
-  /* FOOTER - max1199 */
+  /* FOOTER - max 999 */
   .footer-content1 p {
-    font-size: 9pt;
+    font-size: 14px;
   }
 
   .footer-content2 img{
@@ -491,11 +515,11 @@ p {
     padding-left: .75em;
   }
 }
-
+Í
 /*-----------------------------------------------------------------------------------*/
-/* RESPONSIVE-LAPTOPS/DESKTOPS (min1200px)
+/* RESPONSIVE-LAPTOPS/DESKTOPS (min1000px)
 /*-----------------------------------------------------------------------------------*/
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
 
 
   /* HEADER/NAVBAR - min1200 */
