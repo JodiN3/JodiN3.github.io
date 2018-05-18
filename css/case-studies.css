@@ -8,69 +8,38 @@
 ]
 /* 3 @MEDIA QUERIES - MOBILE, TABLET, DESKTOP */
 
-/*--------------------------------*/
-/*--- GENERAL CSS-ALL FORMATS ---*/
-/*--------------------------------*/
+/*--------------------------------------*/
+/*--- CASE STUDIES - CSS-ALL FORMATS ---*/
+/*--------------------------------------*/
 
-h1 {
-  font-family: 'Lato', sans-serif;
-  font-size: 60px;
-  font-weight: 900;
-  letter-spacing: .04em;
-  line-height: 1em;
-  text-align: center;
+h1, h3, h4, p{
   color: #000000;
-}
-
-h2 {
   font-family: 'Raleway', sans-serif;
-  font-size: 24px;
-  font-weight: 300;
-  letter-spacing: .04em;
-  line-height: 1.3em;
-  text-align: left;
-  color: #000000;
+  text-align: center;
 }
 
 h3 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: .04em;
-  line-height: 1.3em;
-  text-align: left;
-  color: #000000;
-  margin-top: 2em;
-}
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: .02em;
+	line-height: 1.5em;
+  color: #F7C331;
+  margin-top: 4em;
+ }
+
 
 h4 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: .04em;
-  line-height: 15px;
-  text-align: left;
-  color: #000000;
+  line-height: 1em;
+  margin-top: 0;
 }
 
 p {
-  font-family: 'Raleway', sans-serif;
   line-height: 32px;
   font-size: 18px;
   margin-bottom: 1em;
-  text-align: left;
-  color: #000000;
-}
-
-img {
-  margin: 1.5em auto;
-}
-
-a {
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  color: #F7C331;
-  font-weight: 700;
 }
 
 br {
@@ -103,19 +72,22 @@ br {
 .text-container h1{
   margin-top: 0;
   font-size: 60px;
-  font-weight: 700;
   letter-spacing: 3.57%;
   line-height: 72px;
-  color: #000000;
+  text-align: center;
  }
 
  .text-container h2 {
+   color: #000000;
+   font-size: 24px;
    font-weight: 700;
    line-height: 38px;
    padding: 0 10%;
    text-align: center;
+   letter-spacing: .04em;
  }
 
+ /*--SMALL HEADER TEXT-- all formats */
  .small-text-container {
    display: flex;
    justify-content: space-between;
@@ -124,7 +96,7 @@ br {
  }
 
  .text1 p, .text2 p, .text3 p {
-   font-family: "Lato", sans-serif;
+   font-family: 'Lato', sans-serif;
    padding: 0 12px;
  }
 
@@ -151,9 +123,12 @@ br {
 
 .challenge-box h2, .solution-box h2 {
   font-family: 'Lato', sans-serif;
+  color: #000000;
   font-size: 30px;
   font-weight: 700;
   text-align: center;
+  letter-spacing: .04em;
+  line-height: 1.3em;
 }
 
 .challenge-box p, .solution-box p {
@@ -162,7 +137,27 @@ br {
 
 /* THE PROCESS  - all formats */
 
-.click-link a{
+.process h1 {
+ font-size: 30px;
+ margin-bottom: 1em;
+ margin-top: 2em;
+}
+
+.section-header-wrapper {
+  display: block;
+  max-width: 700px;
+  margin: 0px auto 60px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #2086b4;
+  text-align: center;
+}
+
+/* button */
+.click-link a {
   padding-top: 30px;
   font-family: 'Lato', sans-serif;
   font-size: 20px;
@@ -170,32 +165,61 @@ br {
   font-weight: 700;
   text-align: center;
 }
-.process {
 
+/* user research */
+.user-research h3 {
+  color: #F7C331;
+  font-family: 'Lato';
+  font-size: 20px;
 }
 
-.user-research img{
-  width: 100%;
-  height: 100%;
-}
-
-.competition img {
-  width: 100%;
-  height: 100%;
-}
-
-.personas-box{
+.user-research-box {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
   flex-direction: wrap;
+  margin: 1em auto;
+}
 
+.research1, .research2, .research3 .research4 {
+  padding: 0 2em;
+}
+
+.user-research-box p{
+  margin: 1em auto;
+}
+
+
+
+/* competitive analysis */
+
+.competition {
+  margin: 1em auto;
+}
+
+.competition-logos {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.competition-logos img {
+  max-height: 100px;
+  min-width: auto;
+}
+
+/* user personas */
+.personas-box {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-direction: wrap;
+  margin: 1em auto;
 }
 
 .personas-box br{
   line-height: 1em;
 }
-
 
 .persona1, .persona2, .persona3 {
   padding: 30px;
@@ -207,32 +231,39 @@ br {
 }
 
 .persona1 h3, .persona2 h3, .persona3 h3 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: .04em;
   line-height: 20px;
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 1em;
-  text-align: center;
   margin-top: 1em;
+  color: #000000;
 }
 
 .persona1 p, .persona2 p, .persona3 p {
   line-height: 20px;
   font-size: 16px;
   margin-bottom: 1em;
-  text-align: center;
 }
 
+/* user stories/workflows */
 .workflows img {
   width: 100%;
   height: 100%;
+  margin: 1.5em auto;
 }
 
+/* branding */
 .branding img {
   width: 100%;
   height: 100%;
+  margin: 1.5em auto;
 }
 
+/* wireframing/mockups */
 .wire-mock {
+
 }
 
 .wire-mock .invision-links {
@@ -248,45 +279,48 @@ br {
 .wireframes-items .mockups-items img{
   width: 100%;
   height: 100%;
+  margin: 1.5em auto;
 }
 
+/* prototypes */
+
 /* THE CONCLUSION  - all formats */
+.conclusion h1 {
 
-
+}
 /*-----------------------------------------------------------------------------------*/
 /* RESPONSIVE-iPHONES/OTHER MOBILES (min320/max600)
 /*-----------------------------------------------------------------------------------*/
 
 @media (min-width: 320px) and (max-width: 600px)  {
 
-  h1 {
-    font-size: 30px;
-  }
+  h3 {
+  	line-height: 1em;
+    margin-top: 2em;
+   }
 
   h4 {
-    font-size: 20px;
-    line-height: 23px;
-  }
-
-  a {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   p {
-    line-height: 20px;
+    line-height: 24px;
     font-size: 16px;
   }
 
-  .cs-container{
+/* TOP-INTRO  - mobile */
+  .cs-container {
     margin-top: 1em;
-}
+  }
 
-.text-container {
-  padding: 1em;
-}
+  .text-container {
+    padding: 1em;
+  }
 
   .text-container h1{
     font-size: 28px;
+    line-height: 50px;
    }
 
   .text-container h2 {
@@ -295,6 +329,7 @@ br {
     padding: 0 2%;
    }
 
+/*--small header text - mobile */
    .small-text-container {
      flex-direction: column;
    }
@@ -311,12 +346,16 @@ br {
      line-height: 1.5em;
    }
 
+/* CHALLENGE-SOLUTION  - mobile */
    .challenge-solution {
      flex-direction: column;
+     justify-content: center;
+     margin: 3em auto;
+     padding: 0;
    }
 
    .challenge-box, .solution-box {
-     margin: 10px;
+     margin: 10px auto;
      padding: 5px;
    }
 
@@ -331,13 +370,36 @@ br {
      padding: 5px;
    }
 
+/* THE PROCESS  - mobile */
+    .process h1 {
+     font-size: 26px;
+     margin-bottom: 1.5em;
+     margin-top: 1.5em;
+    }
 
-   .wire-mock-box {
-     flex-direction: column;
-     justify-content: center;
+/* button - mobile */
+   .click-link a{
+     font-size: 16px;
    }
 
-   .personas-box{
+/* user research - mobile */
+
+.user-research {
+
+}
+
+.competition-logos img {
+  max-height: 90px;
+  min-width: auto;
+}
+
+
+/* competitive analysis - mobile */
+
+
+
+/* user personas - mobile */
+   .personas-box {
      display: flex;
      justify-content: space-evenly;
      text-align: center;
@@ -352,7 +414,6 @@ br {
      line-height: .5em;
    }
 
-
    .persona1 img, .persona2 img, .persona3 img {
      max-width: 200px;
      min-width: 100px;
@@ -365,10 +426,19 @@ br {
      margin-top: .5em;
    }
 
+/* user stories/workflows - mobile */
 
-   .click-link a{
-     font-size: 16px;
+/* branding - mobile */
+
+/* wireframes/mockups - mobile */
+   .wire-mock-box {
+     flex-direction: column;
+     justify-content: center;
    }
+
+/* prototypes - mobile* /
+
+/* THE CONCLUSION  - mobile */
 
 }
 
@@ -376,6 +446,30 @@ br {
 /* RESPONSIVE-IPADS/TABLETS (min601/max999)
 /*-----------------------------------------------------------------------------------*/
 @media only screen and (min-width: 601px) and (max-width: 999px) {
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h3 {
+
+   }
+
+  h4 {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+  p {
+    line-height: 24px;
+    font-size: 16px;
+  }
+
+/* TOP-INTRO  - tablet */
   .text-container h1{
     font-size: 28px;
    }
@@ -385,47 +479,50 @@ br {
     line-height: 20px;
    }
 
+/*--small header text - tablet */
    .text1 p, .text2 p, .text3 p {
      font-family: "Lato", sans-serif;
      padding: 0 12px;
    }
 
-   p {
-     line-height: 16px;
-     font-size: 14px;
-   }
-
+/* CHALLENGE-SOLUTION  - tablet */
    .challenge-box h2, .solution-box h2 {
      font-size: 24px;
    }
 
+/* THE PROCESS  - tablet */
+
+/* button - tablet */
+   .click-link a {
+     font-size: 16px;
+   }
+
+/* user research - tablet */
+
+/* competitive analysis - tablet */
+
+/* user personas - tablet */
+
+/* user stories/workflows - tablet */
+
+/* branding - tablet */
+
+/* wireframes/mockups - tablet */
    .wire-mock-box {
      flex-direction: column;
      justify-content: center;
    }
 
-   h1 {
-     font-size: 30px;
-   }
+/* prototypes - tablet * /
 
-   h4 {
-     font-size: 20px;
-     line-height: 23px;
-   }
-
-   a {
-     font-size: 16px;
-   }
-
-   .click-link a{
-     font-size: 16px;
-   }
+/* THE CONCLUSION  - tablet */
 
 }
 
 /*-----------------------------------------------------------------------------------*/
 /* RESPONSIVE-LAPTOPS/DESKTOPS (min1000px)
 /*-----------------------------------------------------------------------------------*/
+
 @media (min-width: 1000px) {
 
 }

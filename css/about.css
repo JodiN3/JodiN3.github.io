@@ -12,9 +12,6 @@
 /*--- GENERAL CSS-ALL FORMATS ---*/
 /*--------------------------------*/
 
-h2 {
-}
-
 /* ABOUT ME  - all formats */
 .about {
   background: rgb(189,189,189);
@@ -24,29 +21,29 @@ h2 {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 1em;
-  padding-bottom: 3em;
+  padding: 2em;
 }
 
 .about-text, h1 {
+  font-size: 25px;
   text-align: left;
   vertical-align: middle;
   margin: 20px auto;
-  padding: 1em 30px 10px;
+  padding-left: 2em;
   letter-spacing: .25em;
   line-height: 1em;
 }
 
 .about-text, h2 {
+  font-size: 17px;
   text-align: left;
   vertical-align: middle;
   margin: 20px auto;
-  padding: 1em 30px 10px;
+  padding: 2em 3em;
   font-family: 'Raleway', sans-serif;
-  font-size: 18pt;
   font-weight: 300;
   letter-spacing: .04em;
-  line-height: 1.3em;
+  line-height: 2em;
 }
 
 .lato-light {
@@ -54,11 +51,11 @@ h2 {
 }
 
 .connect-button a{
-  font-size: 22pt;
-  font-weight: 700;
+  font-size: 16pt;
+  font-weight: 600;
   padding: 10px 15px;
-  height: 60px;
-  width: 200px;
+  height: 50px;
+  width: 180px;
   margin: 20px auto;
   background: #F7C331;
   text-decoration: none;
@@ -71,10 +68,11 @@ h2 {
 }
 
 .self-photo {
+  margin-left: 1em;
   display: inline-block;
-  width: 80%;
-  max-width: 391px;
-  max-height: 361px;
+  width: 70%;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -83,8 +81,7 @@ h2 {
 
 @media (min-width: 320px) and (max-width: 600px)  {
 
-  /* ABOUT ME  - max600 */
-
+/* ABOUT ME  - MOBILE */
   .about-text h1 {
     font-size: 20pt;
     margin: 20px auto;
@@ -112,7 +109,8 @@ h2 {
 /* RESPONSIVE-IPADS/TABLETS (min601/max1199)
 /*-----------------------------------------------------------------------------------*/
 @media only screen and (min-width: 601px) and (max-width: 1199px) {
-  /* ABOUT ME  - max1199 */
+
+/* ABOUT ME  - TABLET */
   .about-text h1{
     font-size:28pt;
     margin: 20px auto;

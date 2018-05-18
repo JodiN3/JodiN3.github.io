@@ -13,13 +13,13 @@ font-family: 'Lato', sans-serif;
 /*--- GENERAL CSS-ALL FORMATS ---*/
 /*--------------------------------*/
 
-.wrapper {
+/* .wrapper { */
 	/* display: flex; */
-	flex-flow: row wrap;
- }
+	/* flex-flow: row wrap; */
+ /* } */
 
 	/* We tell all items to be 100% width, via flex-basis */
-.wrapper > * {flex: 1 100%;}
+/* .wrapper > * {flex: 1 100%;} */
 
 body {
 	margin: auto;
@@ -29,7 +29,7 @@ body {
 
 a {
 	color: #FFFFFF;
-	font-family: 'Lato';
+	font-family: 'Lato', sans-serif;
 	font-size: 18px;
 	font-weight: 500;
 	text-decoration: none;
@@ -37,15 +37,15 @@ a {
 
 h1 {
 	color: #FFFFFF;
-	font-family: 'Lato';
-	font-size: 34px;
+	font-family: 'Lato', sans-serif;
+	font-size: 30px;
 	font-weight: 700;
 	line-height: 0;
  }
 
 h2 {
 	color: #FFFFFF;
-	font-family: 'Lato';
+	font-family: 'Lato', sans-serif;
 	font-size: 22px;
 	font-weight: 400;
  }
@@ -120,7 +120,6 @@ p {
 	text-decoration: underline #F7C331;
  }
 
-
  /* HERO  - all formats */
  .hero {
  	background-image: url(../assets/treephoto-bw.png);
@@ -157,7 +156,6 @@ p {
 }
 
 .lato-light {font-weight: 300;}
-
 
 /* CASE STUDIES - all formats */
 .projects {
@@ -286,7 +284,7 @@ p {
 
  .footer-content2 img{
    align-self: center;
-   max-width: 130px;
+   max-width: 125px;
    width: 100%;
  	 padding-left: 3em;
  	 text-decoration: none;
@@ -303,7 +301,7 @@ p {
 
 @media (min-width: 320px) and (max-width: 600px) {
 
-  /* HEADER/NAVBAR - max600 */
+/* HEADER/NAVBAR - MOBILE */
   .navbar-links {
     display: flex;
     flex-wrap: wrap;
@@ -313,7 +311,7 @@ p {
 	.navbar-links .logo {
 		max-width: 70px;
 		min-width: 75px;
-		padding-bottom: 20px;
+		padding: 0 0 20px 0;
 	}
 
   .navbar-links li:first-child {
@@ -323,15 +321,14 @@ p {
 
 	.navbar-links > li > a {
 			font-size: 14px;
-	    padding: 8px 20px;
+	    padding: 8px 15px;
 		}
 
   .navbar-links img{
     align-self: center;
   }
 
-  /* HERO  - max600 */
-
+/* HERO  - MOBILE */
 	.hero {
 		margin-top: 10px;
 	}
@@ -347,7 +344,7 @@ p {
     font-size: 16px;
   }
 
-  /* CASE STUDIES - max600 */
+/* CASE STUDIES - MOBILE */
   .projects {
     padding: 1em 0 3em 0;
     flex-wrap: wrap;
@@ -384,7 +381,7 @@ p {
     font-size: 14px;
   }
 
-  /* CONTACT - max600 */
+/* CONTACT - MOBILE */
   .contact-text {
     padding: 2em;
   }
@@ -405,11 +402,10 @@ p {
     font-size: 14px;
   }
 
-  /* FOOTER - max600 */
+/* FOOTER - MOBILE */
   footer {
     flex-wrap: wrap;
     justify-content: space-evenly;
-
   }
 
   .footer-content1 p {
@@ -417,7 +413,7 @@ p {
   }
 
   .footer-content2 img{
-  max-width: 100px;
+  max-width: 80px;
   padding: 1em;
   }
 }
@@ -427,15 +423,13 @@ p {
 /*-----------------------------------------------------------------------------------*/
 @media only screen and (min-width: 601px) and (max-width: 999px) {
 
-  /* HEADER/NAVBAR - max1199 */
-
+/* HEADER/NAVBAR - TABLET */
 	.navbar-links .logo {
 		max-width: 80px;
 		min-width: 80px;
 	}
 
-
-  /* HERO  - max 999 */
+/* HERO  - TABLET */
   .name-block .container{
   }
 
@@ -451,7 +445,7 @@ p {
     font-size: 18px;
   }
 
-  /* CASE STUDIES - max 999 */
+/* CASE STUDIES - TABLET */
   .projects {
     padding: 1em 0 3em 0;
     flex-wrap: wrap;
@@ -484,7 +478,7 @@ p {
     font-size: 18px;
   }
 
-  /* CONTACT - max 999 */
+/* CONTACT - TABLET */
   .contact-text {
     padding: 4em;
   }
@@ -505,7 +499,7 @@ p {
     font-size: 18px;
   }
 
-  /* FOOTER - max 999 */
+/* FOOTER - TABLET */
   .footer-content1 p {
     font-size: 14px;
   }
@@ -515,18 +509,18 @@ p {
     padding-left: .75em;
   }
 }
-Í
+
 /*-----------------------------------------------------------------------------------*/
 /* RESPONSIVE-LAPTOPS/DESKTOPS (min1000px)
 /*-----------------------------------------------------------------------------------*/
 @media (min-width: 1000px) {
 
 
-  /* HEADER/NAVBAR - min1200 */
+/* HEADER/NAVBAR - DESKTOP */
 
-  /* PROJECTS - min 1200 */
+/* PROJECTS - DESKTOP */
 
 
-  /* FOOTER - min 1200 */
+/* FOOTER - DESKTOP */
 
 }
