@@ -108,6 +108,7 @@ textarea {
 
   .lets-talk, h2 {
     font-size: 12pt;
+    letter-spacing: .02em;
   }
 
   .lets-talk a {

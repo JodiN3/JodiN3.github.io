@@ -188,7 +188,7 @@ p {
  	background-position: center;
 	background: #0B3C5D;
 	width: calc(32% - .5em);
-	/* min-height: 30em; */
+	min-height: 40em;
 	position: relative;
 	margin-bottom: auto;
 	margin-top: 1em;
@@ -330,6 +330,7 @@ p {
 }
 
  .copyright-info p{
+	 font-size: 12px;
  	 list-style: none;
    font-weight: 300;
 	 padding: 10px 30px;

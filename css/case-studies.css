@@ -343,18 +343,19 @@ justify-content: center;
   justify-content: center;
 }
 
-.wireframe-comparison article {
+.wireframe-comparison article img {
   width: calc(50% - 4em);
   margin: 1em auto;
+  align-self: center;
   align-items: center;
   position: relative;
 }
 
-.wireframe img{
+/* .wireframe img{
   max-width: 500px;
   min-width: 250px;
   text-align: center;
-}
+} */
 
 
 .button-links {
@@ -464,6 +465,11 @@ justify-content: center;
      margin-top: 1.5em;
     }
 
+    .section-header-wrapper {
+      max-width: 300px;
+    }
+
+
 /* button - mobile */
    .click-link a{
      font-size: 16px;
@@ -538,8 +544,8 @@ margin-bottom: .75em;
 }
 
 .wireframe-comparison article {
-  width: calc(50% - 4em);
-  margin: 1em auto;
+width: calc(100% - 1em);
+  margin: .5em auto;
   align-items: center;
   position: relative;
 }
@@ -617,6 +623,11 @@ justify-content: center;
    }
 
 /* THE PROCESS  - tablet */
+
+.section-header-wrapper {
+  max-width: 500px;
+}
+
 
 /* button - tablet */
    .click-link a {
