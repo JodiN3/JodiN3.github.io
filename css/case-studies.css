@@ -258,8 +258,7 @@ br {
 }
 
 .personas-box article{
-  width: calc(30% - 4em);
-  margin: 1em auto;
+  width: calc(30% - 4em + 6em);
   align-items: center;
   position: relative;
 }
@@ -380,7 +379,7 @@ justify-content: center;
 /* RESPONSIVE-iPHONES/OTHER MOBILES (min320/max600)
 /*-----------------------------------------------------------------------------------*/
 
-@media (min-width: 320px) and (max-width: 600px)  {
+@media (min-width: 350px) and (max-width: 600px)  {
 
   h3 {
   	line-height: 1em;
@@ -510,7 +509,7 @@ max-height: 65px;
 
 /* user personas - mobile */
 .personas-box article{
-width: calc(100% - 4em);
+width: calc(100% - 4em + 10px);
 margin: .5em auto;
 }
 
@@ -523,7 +522,7 @@ margin-top: .5em;
 }
 
 .persona p {
-line-height: 15px;
+line-height: 20px;
 font-size: 15px;
 margin-bottom: .75em;
 }
