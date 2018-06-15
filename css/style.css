@@ -103,7 +103,7 @@ p {
 	padding: 20px 0 20px 20px;
 }
 
-.navbar-links li:first-child {
+.navbar-links > li:first-child {
 	align-self: flex-start;
 	list-style: none;
 	margin-right: auto;
@@ -117,10 +117,13 @@ p {
     color: #0B3C5D;
 	}
 
-.navbar-links
+.navbar-links:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
 
 
-.navbar-links a:hover {
+.navbar-links > a:hover {
 	font-weight: 700;
 	color: #F7C331;
 	text-decoration: none;
@@ -205,7 +208,7 @@ p {
 	max-width: 250px;
 	max-height: 250px;
 	align-self: center;
-	margin: 1em auto;
+	margin: 1.5em auto 1em;
 }
 
 .project-text {
@@ -224,7 +227,7 @@ p {
 	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: .08em;
-	line-height: 3em;
+	line-height: 2em;
  }
 
 .project-text h3 {

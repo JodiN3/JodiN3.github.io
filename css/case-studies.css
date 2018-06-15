@@ -23,7 +23,7 @@ h3 {
 	letter-spacing: .02em;
 	line-height: 2em;
   color: #0B3C5D;
-  margin-top: 5em;
+  margin-top: 3em;
   text-align: left;
   font-style: normal;
  }
@@ -58,7 +58,7 @@ br {
    justify-content: left;
    position: relative;
    z-index: 1;
-   background-color: #E0E0E0;
+   background-color: #D7E0E6;
    max-width: 1400px;
   }
 
@@ -78,6 +78,7 @@ br {
   letter-spacing: 3.57%;
   line-height: 72px;
   text-align: center;
+  color: #0B3C5D;
  }
 
  .text-container h2 {
@@ -117,7 +118,7 @@ br {
 }
 
 .challenge-box, .solution-box {
-  background-color: #E0E0E0;
+  background-color: #F2F2F2;
   margin: 30px;
   padding: 25px;
   text-align: center;
@@ -138,15 +139,6 @@ br {
   font-weight: 400;
 }
 
-/* THE PROCESS - all formats */
-
-.process h1 {
- font-size: 30px;
- margin-bottom: 1em;
- margin-top: 2em;
- color: #0B3C5D;
-}
-
 .section-header-wrapper {
   display: block;
   max-width: 700px;
@@ -158,6 +150,17 @@ br {
   align-items: center;
   color: #2086b4;
   text-align: center;
+}
+
+/* THE PROCESS - all formats */
+
+.process h1 {
+ font-size: 25px;
+ margin-bottom: 15px;
+ margin-top: 2em;
+ color: #000000;
+ text-align: left;
+ letter-spacing: 2px;
 }
 
 /* button  - all formats */
@@ -335,11 +338,14 @@ justify-content: center;
 }
 
 /* wireframing/mockups - all formats */
+
 .wireframe-comparison {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  background-color: #F2F2F2;
+  margin: 1em auto;
 }
 
 .wireframe-comparison article img {

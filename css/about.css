@@ -21,6 +21,7 @@
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 10px;
   padding: 2em;
 }
 
@@ -50,12 +51,11 @@
   font-weight: 200;
 }
 
-
-.case-button {
-	margin: 4em auto;
+.connect-button-box {
+  margin: 2.5em auto 1em;
 }
 
-.connect-button a{
+.connect-button > a{
 	letter-spacing: 2px;
   font-size: 12px;
   font-weight: 300;
@@ -71,7 +71,7 @@
 	color: #FFFFFF;
 }
 
-.connect-button a:hover {
+.connect-button > a:hover {
 	color: #0B3C5D;
 	font-weight: 700;
 	border-color: #f7c231;
