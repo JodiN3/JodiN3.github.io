@@ -74,13 +74,13 @@
 .connect-button > a:hover {
 	color: #0B3C5D;
 	font-weight: 700;
-	border-color: #f7c231;
-	background: #f7c231;
+	border-color: #F7C231;
+	background: #F7C231;
 }
 
 .connect-button:active {
-   border-top-color: #1b435e;
-   background: #1b435e;
+   border-top-color: #1B435E;
+   background: #1B435E;
 }
 
 .self-photo {

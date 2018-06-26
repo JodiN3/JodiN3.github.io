@@ -80,21 +80,42 @@ textarea {
   input, textarea, select, fieldset {
     margin-bottom: 1.5rem; }
 
-.connect-button button{
-  font-size: 16pt;
-  font-weight: 700;
-  padding: 10px 15px;
-  height: 50px;
-  width: 225px;
-  margin: 20px auto;
-  background: #F7C331;
-  text-decoration: none;
-  color: #0B3C5D;
+
+
+
+
+.connect-button-box {
+    margin: 2.5em auto 1em;
 }
 
-.connect-buttom a:hover {
+
+.connect-button button{
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 10px 20px;
+  height: 50px;
+  width: 150px;
+  margin: 20px auto;
+  text-decoration: none;
+  vertical-align: middle;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #F7C331;
   color: #FFFFFF;
-  text-align: center;
+
+}
+
+.connect-buttom > button:hover {
+  color: #0B3C5D;
+  font-weight: 700;
+  border-color: #F7C231;
+  background: #F7C231;
+}
+
+.connect-button:active {
+   border-top-color: #1B435E;
+   background: #1B435E;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -114,11 +135,8 @@ textarea {
   .lets-talk a {
     font-size: 12pt;
   }
-  .connect-button button{
-    font-size: 12pt;
-    height: 40px;
-    width: 150px;
-    margin: 15px auto;
+  .connect-button a{
+  font-size: 12px;
   }
 }
 
@@ -135,12 +153,10 @@ textarea {
     font-size: 14pt;
   }
 
-  .connect-button button{
-    font-size: 14pt;
-    height: 50px;
-    width: 200px;
-    margin: 15px auto;
+  .connect-button a{
+  font-size: 18pt;
   }
+
 }
 
 /*-----------------------------------------------------------------------------------*/

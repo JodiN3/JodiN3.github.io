@@ -4,42 +4,77 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jodi Newman Designer | Developer - About</title>
+    <title>Jodi Newman Designer | Developer</title>
 
 <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Lato:300,900|Raleway:400,400i,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:400,400i,700" rel="stylesheet">
+
 
 <!-- CSS -->
+<script defer src="https://use.fontawesome.com/ef802777b5.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120744808-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-120744808-1');
-    </script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120744808-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-120744808-1');
+      </script>
 
-  </head>
+      </head>
 
-<div class="wrapper">
-  <body>
+    <div class="wrapper">
+      <body>
 
-    <!-- header/navbar -->
-      <section class="navbar">
+        <!-- Fixed navbar -->
+        <section class="header" id="header">
 
-        <ul class="navbar-links">
-          <li><a href="index.html"><img class="logo" src="./assets/jn-symbol-navy.png" alt="Jodi Newman Logo"></a>
-          <li><a href="index.html" class="navbar-link">HOME</a></li>
-          <li><a href="index.html#projects" class="navbar-link">WORK</a></li>
-          <li><a href="about.html" class="navbar-link">ABOUT</a></li>
-          <li><a href="contact.html" class="navbar-link">CONNECT</a></li>
-        </ul>
+          <nav class="navbar navbar-default" id="navigation-bar">
 
+             <div class="container">
+             <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="navbar-header">
+                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                      data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                   <span class="sr-only">Toggle navigation</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                 </button>
+
+                 <a class="navbar-brand" href="index.html"> <img src="./assets/jn-symbol-navy.png" alt="Jodi Newman"></a>
+
+               </div> <!-- /.navbar-header -->
+
+               <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+               <ul class="nav navbar-nav navbar-right">
+
+                 <li class="active">
+                   <a href="index.html">HOME</a></li>
+                 <li><a href="index.html#work-menu-tag">WORK</a></li>
+                 <li><a href="about.html">ABOUT</a></li>
+                 <li><a href="contact.html">CONNECT
+                   <span class="sr-only">(current)</span>
+                  </a>
+                 </li>
+
+                  </ul>
+
+                 <!-- /.nav -->
+                  </div><!-- /.navbar-collapse -->
+
+               </div><!-- /.container -->
+           </nav>
     </section>
 
   <!--About Me-->
@@ -64,33 +99,47 @@
           <textarea name="message" placeholder="MESSAGE"></textarea>
       </div>
       <div class="row">
+
+        <div class="connect-button-box">
+
         <div class="connect-button">
         <button type="submit">SUBMIT</button>
       </div>
     </div>
+  </div>
+
+  </div>
+
+
+
+
 
   </section>
 
   <!-- Footer -->
-  <nav class="footer">
+<nav class="footer">
 
-    <div class="footer-container">
+<div class="footer-container">
 
-      <div class="copyright-info">
-        <p>&copy;2018 | Designed & Developed by Jodi Newman</p>
-      </div>
+  <div class="copyright-info">
+    <p>&copy;2018 | Designed & Developed by Jodi Newman</p>
+  </div>
 
-      <div class="social-bar">
+  <div class="social-bar">
 
-        <a href="mailto:jodinewman.recruit@gmail.com">
-          <i class="fa fa-envelope-square fa-lg"></i></a>
-        <a href="www.linkedin.com/in/jinewman">
-          <i class="fa fa-linkedin-square fa-lg"></i></a>
-        <a href="github.com/JodiN3">
-          <i class="fa fa-github-square fa-lg"></i></a>
-      </div>
+    <a href="mailto:jodinewman.recruit@gmail.com">
+      <i class="fa fa-envelope-square fa-lg"></i></a>
+    <a href="www.linkedin.com/in/jinewman">
+      <i class="fa fa-linkedin-square fa-lg"></i></a>
+    <a href="github.com/JodiN3">
+      <i class="fa fa-github-square fa-lg"></i></a>
+  </div>
 
-  </nav>
+</nav>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+
 
 </body>
 </div>
