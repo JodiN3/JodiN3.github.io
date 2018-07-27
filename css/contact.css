@@ -11,8 +11,9 @@
 /*--- GENERAL CSS-ALL FORMATS ---*/
 /*--------------------------------*/
 
+
 /* CONTACT ME  - all formats */
-.contact-pg {
+.contact-form {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -20,11 +21,12 @@
   background: #0B3C5D;
 }
 
-.lets-talk {
-  align-self: center;
+.form-container {
+  margin: 50px 0px;
+  padding: 20px;
 }
 
-.lets-talk, h1 {
+.contact-form h1 {
   text-align: left;
   vertical-align: middle;
   padding: 1em 30px 10px;
@@ -33,14 +35,14 @@
   line-height: 1em;
 }
 
-.lets-talk, h2 {
+.contact-form h2 {
   font-size: 18pt;
   font-weight: 300;
   letter-spacing: .04em;
   line-height: 1.5em;
 }
 
-.lets-talk, a {
+.contact-form a {
   color: #F7C331;
   font-weight: 300;
 }
@@ -49,17 +51,32 @@
   font-weight: 200;
 }
 
-.input-form {
-  padding: 20px;
-  width: 75%;
-  margin: 1em auto;
+.contact-form input {
+  font-family: "pragmatica-web",sans-serif;
+      font-size: 1em;
+      border-radius: 0px;
+      margin-bottom: 30px;
+      padding-bottom: 5px;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid gray;
+      transition: border-bottom 0.1s ease-in;
 }
 
-form input, form textarea {
-  margin-bottom: .5em;
-}
+.contact-form textarea {
+    font-family: "pragmatica-web",sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    height: 200px;
+  }
 
-input, textarea {
+/* input, textarea {
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #eeeeee;
@@ -68,7 +85,7 @@ input, textarea {
   box-shadow: none;
   box-sizing: border-box;
   width: 100%;
-}
+} */
 
 textarea {
   overflow: auto;
@@ -77,19 +94,7 @@ textarea {
   padding-top: 6px;
   padding-bottom: 6px; }
 
-  input, textarea, select, fieldset {
-    margin-bottom: 1.5rem; }
-
-
-
-
-
-.connect-button-box {
-    margin: 2.5em auto 1em;
-}
-
-
-.connect-button button{
+.contact-form button{
   letter-spacing: 2px;
   font-size: 12px;
   font-weight: 300;
@@ -103,17 +108,16 @@ textarea {
   border-width: 1px;
   border-color: #F7C331;
   color: #FFFFFF;
-
 }
 
-.connect-buttom > button:hover {
+.contact-form > button:hover {
   color: #0B3C5D;
   font-weight: 700;
   border-color: #F7C231;
   background: #F7C231;
 }
 
-.connect-button:active {
+.contact-form button:active {
    border-top-color: #1B435E;
    background: #1B435E;
 }
@@ -123,16 +127,16 @@ textarea {
 /*-----------------------------------------------------------------------------------*/
 @media (min-width: 320px) and (max-width: 600px) {
 
-  .lets-talk, h1 {
+  .section-header, h1 {
     font-size: 22pt;
   }
 
-  .lets-talk, h2 {
+  .section-header, h2 {
     font-size: 12pt;
     letter-spacing: .02em;
   }
 
-  .lets-talk a {
+  .section-header a {
     font-size: 12pt;
   }
   .connect-button a{
@@ -145,12 +149,16 @@ textarea {
 /*-----------------------------------------------------------------------------------*/
 @media only screen and (min-width: 601px) and (max-width: 1199px) {
 
-  .lets-talk, h1 {
+  .section-header, h1 {
     font-size: 24pt;
   }
 
-  .lets-talk, h2 {
+  .section-header, h2 {
     font-size: 14pt;
+  }
+
+  .contact-form {
+      width: 60%;
   }
 
   .connect-button a{

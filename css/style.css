@@ -23,7 +23,6 @@ font-family: 'Lato', sans-serif;
 
 body {
 	margin: auto;
-	/* padding: 20px; */
 	text-align: center;
  }
 
@@ -114,6 +113,7 @@ p {
     background-color: transparent;
     border-color: transparent;
     padding-top: 5px;
+		margin-bottom: 0;
 }
 
 .navbar-default .navbar-nav>li>a{
@@ -194,7 +194,7 @@ p {
 	font-weight: 300;
 }
 
-/* PROJECTS - all formats */
+/* projects-case studies - all formats */
 .header-container h1 {
 	color: #000000;
 	font-weight: 400;
@@ -353,8 +353,9 @@ p {
 
  .footer .footer-container {
    display: flex;
-   padding-top: 3em;
+   padding-top: 2em;
 	 justify-content: space-between;
+	 background-color: #F2F2F2;
  }
 
 .copyright-info {
