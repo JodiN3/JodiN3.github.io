@@ -33,7 +33,7 @@ h4 {
   font-size: 22px;
   font-weight: 700;
   letter-spacing: .04em;
-  line-height: 1em;
+  line-height: 1.5em;
   margin-top: 0;
   text-align: left;
 }
@@ -51,7 +51,7 @@ br {
 
 /* TOP-INTRO  - all formats */
 .cs-container{
-   margin: 0 auto;
+   margin: 7em auto 0;
    display: flex;
    flex-direction: column;
    align-items: stretch;
@@ -73,6 +73,8 @@ br {
 }
 
 .text-container > h1{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   margin-top: 0;
   font-size: 60px;
   letter-spacing: 3.57%;
@@ -101,7 +103,7 @@ br {
 
  .text1 > p, .text2 > p, .text3 > p {
    font-family: 'Lato', sans-serif;
-   padding: 0 12px;
+   padding: 0 8em;
  }
 
 /* CHALLENGE-SOLUTION  - all formats */
@@ -164,7 +166,7 @@ br {
 
 /* button  - all formats */
 .click-link {
-  margin: 3em auto;
+  margin: 3em auto 6em;
 }
 
 .click-link > a{
@@ -175,7 +177,6 @@ br {
   padding: 10px 20px;
   height: 50px;
   width: 150px;
-  margin: 20px auto;
   text-decoration: none;
 	vertical-align: middle;
 	border-style: solid;
@@ -202,7 +203,6 @@ br {
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: center;
-  /* margin: 0 8em; */
 }
 
 .user-research-results > article{
@@ -264,11 +264,6 @@ br {
   position: relative;
 }
 
-.persona > br{
-  line-height: .5em;
-  padding: 30px;
-}
-
 .persona > img {
   max-width: 100px;
   min-width: 75px;
@@ -288,9 +283,9 @@ br {
 }
 
 .persona > p {
-  line-height: 20px;
+  line-height: 1.5em;
   font-size: 16px;
-  margin-bottom: 1em;
+  margin: 1em;
   text-align: center;
 }
 
@@ -315,17 +310,14 @@ br {
   text-align: center;
 }
 
-
-.button-links {
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-justify-content: center;
+.workflow-docs {
+  background-color: #F2F2F2;
 }
 
-.button-links > article {
-    text-align: center;
-  margin: auto;
+.workflow-docs > img {
+  width: 30%;
+  height: 30%;
+  margin: 1.5em 30px;
 }
 
 /* branding */
@@ -408,7 +400,7 @@ justify-content: center;
 
 /* TOP-INTRO  - mobile */
   .cs-container {
-    margin-top: 1em;
+    margin-top: 7em;
   }
 
   .text-container {
@@ -423,15 +415,25 @@ justify-content: center;
   .text-container > h2 {
     font-size: 16px;
     line-height: 20px;
-    padding: 0 2%;
+    padding: 0 7%;
    }
 
 /*--small header text - mobile */
    .small-text-container {
      flex-direction: column;
+     line-height: 25px;
    }
 
-   .text1 > p, .text2 > p, .text3 > p {
+   .text {
+   padding: 1em 7%;
+  }
+
+  .text > h4 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+   .text > p {
      font-family: "Lato", sans-serif;
      padding: 0;
      font-size: 16px;
@@ -439,14 +441,10 @@ justify-content: center;
      text-align: center;
    }
 
-   .text1 > br, .text2 > br, .text3 > br {
-     line-height: 1.5em;
-   }
-
 /* CHALLENGE-SOLUTION  - mobile */
    .challenge-solution {
      flex-direction: column;
-     justify-content: left;
+     justify-content: center;
      margin: 3em auto;
      padding: 0;
    }
@@ -464,7 +462,8 @@ justify-content: center;
      font-size: 16px;
      line-height: 24px;
      margin-bottom: .5em;
-     padding: 5px;
+     padding: 5px 7%;
+     text-align: center;
    }
 
 /* THE PROCESS  - mobile */
@@ -536,9 +535,6 @@ line-height: 20px;
 font-size: 15px;
 margin-bottom: .75em;
 }
-
-
-
 
 /* user stories/workflows - mobile */
 
@@ -624,9 +620,17 @@ justify-content: center;
    }
 
 /*--small header text - tablet */
-   .text1 > p, .text2 > p, .text3 > p {
+  .text {
+    padding: 0 15px;
+  }
+  .text > h4 {
+    font-size: 14px;
+    text-align: center;
+  }
+   .text > p {
      font-family: "Lato", sans-serif;
      padding: 0 12px;
+     text-align: center;
    }
 
 /* CHALLENGE-SOLUTION  - tablet */
